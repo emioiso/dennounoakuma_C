@@ -1,12 +1,27 @@
+// #include "stdio.h"
+
+// int main(void)
+// {
+// 	int  a;
+
+// 	// printf("数値を入力してください ; ");
+ 	// scanf("%d", &a);
+// 	// printf("%d\n", a+42);
+// 	// printf("あなたが入力した数値は%dです", a);
+
+// 	return 0;
+// }
+
+
 #include "stdio.h"
 
 int main(void)
 {
-	int  a;
+	char  *a;
 
-	printf("数値を入力してください ; ");
-	scanf("%d", &a);
-	printf("あなたが入力した数値は%dです", a);
+	//printf("数値を入力してください ; ");
+	fgets(a, sizeof(a),stdin);
+	printf("%s\n", a);
 
 	return 0;
 }
